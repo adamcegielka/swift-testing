@@ -48,9 +48,7 @@ struct BankAccountTests {
         let feePercentage = 0.02 // 2%
         let depositAmount = 200.0
         let expectedBalance = 696.0
-        
         bankAccount.deposit(amount: depositAmount, depositType: .transfer)
-        
         #expect(bankAccount.balance == expectedBalance)
     }
 }
