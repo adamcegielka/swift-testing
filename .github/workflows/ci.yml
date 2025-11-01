@@ -1,12 +1,7 @@
 name: CI
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+  workflow_dispatch:   # manually triggering actions from GitHub
 
 jobs:
   ios-tests:
@@ -40,3 +35,14 @@ jobs:
             -enableCodeCoverage YES \
             clean test
 
+# TODO: When GitHub adds macOS 15 (Tahoe) with Xcode 26,
+# change `runs-on: macos-14` → `runs-on: macos-15`
+#
+# change triggering actions on for →
+# on:
+#  push:
+#    branches:
+#      - main
+#  pull_request:
+#    branches:
+#      - main
