@@ -22,8 +22,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Jeśli runner ma inną wersję Xcode, zmień ścieżkę poniżej (np. Xcode_16.1.app),
-      # lub usuń ten krok aby użyć domyślnej wersji Xcode na obrazie.
       - name: Select Xcode 16
         run: sudo xcode-select -s "/Applications/Xcode_16.0.app"
 
@@ -32,7 +30,6 @@ jobs:
           xcodebuild -version
           swift --version
 
-      # Upewnij się, że scheme "OuluBankR1" jest Shared w Xcode i zacommitowany do repo.
       - name: Resolve packages
         run: xcodebuild -resolvePackageDependencies -scheme OuluBankR1
 
