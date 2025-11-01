@@ -3,8 +3,8 @@
 
 ## Bank Account Tests for Deposit and Withdraw (Unit Tests)
 
-- (DONME) When deposit using check or cash then bank balance increases.  
-- When deposit using transfer then charge fee to amount deposited.  
+- (DONE) When deposit using check or cash then bank balance increases.  
+- (DONE) When deposit using transfer then charge fee to amount deposited.  
 - Depositing negative amount is not allowed. 
 - Withdrawing with insufficient balance results in penalty. 
 - Deposited amount is added to the transaction history. 
