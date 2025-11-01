@@ -1,0 +1,50 @@
+//
+//  .gitignore
+//  OuluBankR1
+//
+//  Created by Adam Cegielka on 01/11/2025.
+//
+
+# Xcode
+.DS_Store
+build/
+DerivedData/
+*.xcuserstate
+*.xccheckout
+*.moved-aside
+*.xcuserdatad
+*.xcworkspace/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+
+# Swift Package Manager
+.swiftpm/
+.build/
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Tuples and other config files
+*.swp
+*.lock
+*.env
+
+# Xcode generated archives
+*.xcarchive
+
+# Ignore user-specific settings
+*.xcuserdatad/
+*.xcscmblueprint
+*.xcodeproj/xcuserdata/
+
+# Ignore Xcode build products
+Products/
