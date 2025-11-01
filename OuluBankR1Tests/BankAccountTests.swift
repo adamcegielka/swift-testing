@@ -52,3 +52,5 @@ struct BankAccountTests {
         #expect(bankAccount.balance == expectedBalance)
     }
 }
+
+// ci testing
