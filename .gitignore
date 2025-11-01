@@ -5,20 +5,25 @@
 //  Created by Adam Cegielka on 01/11/2025.
 //
 
-# Xcode
+# macOS
 .DS_Store
+
+# Xcode
 build/
 DerivedData/
-*.xcuserstate
-*.xccheckout
 *.moved-aside
-*.xcuserdatad
-*.xcworkspace/xcuserdata/
+*.xccheckout
+*.xcuserstate
+*.xcscmblueprint
+*.xcuserdatad/
 *.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
 
 # Swift Package Manager
 .swiftpm/
 .build/
+Package.resolved
 
 # CocoaPods
 Pods/
@@ -31,20 +36,13 @@ Carthage/Build/
 fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
-fastlane/test_output
+fastlane/test_output/
 
-# Tuples and other config files
+# Archives
+*.xcarchive
+
+# Other common
 *.swp
 *.lock
 *.env
-
-# Xcode generated archives
-*.xcarchive
-
-# Ignore user-specific settings
-*.xcuserdatad/
-*.xcscmblueprint
-*.xcodeproj/xcuserdata/
-
-# Ignore Xcode build products
 Products/

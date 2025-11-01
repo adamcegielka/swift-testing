@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C25876C92EB621AF003ACC1F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C25876C72EB621A2003ACC1F /* README.md */; };
-		C25876DC2EB637DB003ACC1F /* .gitignore in Sources */ = {isa = PBXBuildFile; fileRef = C25876DB2EB637D6003ACC1F /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +35,26 @@
 		C25876DB2EB637D6003ACC1F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C25876E12EB644F8003ACC1F /* Exceptions for "Helpful" folder in "OuluBankR1Tests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				shortcuts.md,
+			);
+			target = 8DDA7EDE2D5E7A6400C57DD6 /* OuluBankR1Tests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		C25876E22EB644F8003ACC1F /* Exceptions for "Helpful" folder in "Compile Sources" phase from "OuluBankR1Tests" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 8DDA7EDB2D5E7A6400C57DD6 /* Sources */;
+			membershipExceptions = (
+				shortcuts.md,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8D5051A92D6168AC00CB3AA4 /* OuluBankR1UITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
@@ -55,6 +74,15 @@
 		C25876D62EB635C4003ACC1F /* .github */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = .github;
+			sourceTree = "<group>";
+		};
+		C25876DD2EB6449A003ACC1F /* Helpful */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C25876E12EB644F8003ACC1F /* Exceptions for "Helpful" folder in "OuluBankR1Tests" target */,
+				C25876E22EB644F8003ACC1F /* Exceptions for "Helpful" folder in "Compile Sources" phase from "OuluBankR1Tests" target */,
+			);
+			path = Helpful;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -87,6 +115,7 @@
 		8DDA7EC12D5E7A3E00C57DD6 = {
 			isa = PBXGroup;
 			children = (
+				C25876DD2EB6449A003ACC1F /* Helpful */,
 				C25876DB2EB637D6003ACC1F /* .gitignore */,
 				C25876D62EB635C4003ACC1F /* .github */,
 				8DDA7ECC2D5E7A3E00C57DD6 /* OuluBankR1 */,
@@ -171,6 +200,7 @@
 			fileSystemSynchronizedGroups = (
 				8DDA7EE02D5E7A6400C57DD6 /* OuluBankR1Tests */,
 				C25876D62EB635C4003ACC1F /* .github */,
+				C25876DD2EB6449A003ACC1F /* Helpful */,
 			);
 			name = OuluBankR1Tests;
 			packageProductDependencies = (
@@ -267,7 +297,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C25876DC2EB637DB003ACC1F /* .gitignore in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
