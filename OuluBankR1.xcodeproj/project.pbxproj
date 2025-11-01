@@ -50,11 +50,6 @@
 			path = OuluBankR1Tests;
 			sourceTree = "<group>";
 		};
-		C25876D12EB62937003ACC1F /* .github-test */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ".github-test";
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +80,6 @@
 		8DDA7EC12D5E7A3E00C57DD6 = {
 			isa = PBXGroup;
 			children = (
-				C25876D12EB62937003ACC1F /* .github-test */,
 				8DDA7ECC2D5E7A3E00C57DD6 /* OuluBankR1 */,
 				8DDA7EE02D5E7A6400C57DD6 /* OuluBankR1Tests */,
 				8D5051A92D6168AC00CB3AA4 /* OuluBankR1UITests */,
@@ -167,7 +161,6 @@
 			);
 			fileSystemSynchronizedGroups = (
 				8DDA7EE02D5E7A6400C57DD6 /* OuluBankR1Tests */,
-				C25876D12EB62937003ACC1F /* .github-test */,
 			);
 			name = OuluBankR1Tests;
 			packageProductDependencies = (
