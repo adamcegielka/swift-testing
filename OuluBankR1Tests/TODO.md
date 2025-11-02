@@ -13,7 +13,7 @@
 ## APRService Tests 
 
 - [x] APR is calculated within expected range for valid SSN.
-- [ ] APR calculation fails for ssn with no credit score.  
+- [x] APR calculation fails for ssn with no credit score.  
 
 ## Mocking
 
