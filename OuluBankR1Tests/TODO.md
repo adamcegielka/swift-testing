@@ -17,7 +17,7 @@
 
 ## Mocking
 
-- [ ] APR service should call get credit score on credit score service
+- [x] APR service should call get credit score on credit score service
 - [ ] APR service does not call get credit score for invalid ssn   
 
 ## UITests 
