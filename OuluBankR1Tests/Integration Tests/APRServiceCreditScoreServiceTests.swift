@@ -31,5 +31,23 @@ struct APRServiceCreditScoreServiceTests {
             let _ = try await aprService.getAPR(ssn: validSSN)
         }
     }
+    
+    // APR service does not call get credit score for invalid ssn
+    @Test
+    func apr_service_does_not_call_get_credit_score_for_invalid_ssn() async throws {
+        
+        var mockCreditScoreService = MockCreditScoreService()
+        
+        await confirmation("APRService called CreditScoreService even with invalid ssn", expectedCount: 0) { confirmation in
+            
+            mockCreditScoreService.onGetCreditScore = { ssn in
+                confirmation()
+                return CreditScore(score: 500, lastUpdated: "11/02/2025", reportedBy: "Experian")
+            }
+            
+            let aprService = APRService(creditScoreService: mockCreditScoreService)
+            let _ = try? await aprService.getAPR(ssn: "not-a-valid")
+        }
+    }
 
 }

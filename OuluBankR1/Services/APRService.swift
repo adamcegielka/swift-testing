@@ -29,12 +29,22 @@ enum CreditScoreServiceError: LocalizedError {
     }
 }
 
+enum APRServiceError: Error {
+    case invalidSSN
+}
+
 struct APRService {
     
     // third part service
     let creditScoreService: CreditScoreServiceProtocol
     
     func getAPR(ssn: String) async throws -> Double {
+        
+        // check if ssn is valid or not
+        if !ssn.isSSN {
+            throw APRServiceError.invalidSSN
+        }
+        
         guard let creditScore = try await creditScoreService.getCreditScore(ssn: ssn) else {
             throw CreditScoreServiceError.noCreditScoreFound
         }
@@ -50,5 +60,3 @@ struct APRService {
         }
     }
 }
-
-
