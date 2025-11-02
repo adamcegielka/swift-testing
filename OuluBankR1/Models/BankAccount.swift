@@ -18,6 +18,10 @@ enum DepositType {
     case transfer
 }
 
+enum WithdrawType {
+    case check
+}
+
 // create BankAccount class
 
 class BankAccount {
@@ -43,6 +47,19 @@ class BankAccount {
             case .transfer:
                 let fee = amount * transferFeePercentage
                 self.balance += (amount - fee)
+        }
+    }
+    
+    func withdraw(amount: Double, withdrawType: WithdrawType) {
+        
+        let penaltyPercentage = 0.10
+        
+        if amount > balance {
+            let overdrafAmount = amount - balance
+            let penalty = overdrafAmount * penaltyPercentage
+            self.balance -= penalty
+        } else {
+            self.balance -= amount
         }
     }
 }
