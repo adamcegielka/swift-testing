@@ -3,12 +3,14 @@
 //  OuluBankR1
 //
 //  Created by Mohammad Azam on 2/13/25.
+//  Updated by Adam Cegielka on 11/2/2025
 //
 
 import SwiftUI
 
 struct ContentView: View {
     
+    @Environment(\.aprService) private var aprService
     
     @State private var ssn: String = ""
     @State private var apr: Double?
@@ -24,7 +26,13 @@ struct ContentView: View {
                 .accessibilityIdentifier("ssnTextField")
             Button("Calculate APR") {
                 // call aprService.getAPR
-        
+                Task {
+                    do {
+                        apr = try await aprService.getAPR(ssn: ssn)
+                    } catch {
+                        message = error.localizedDescription
+                    }
+                }                
             }
             .accessibilityIdentifier("calculateAPRButton")
             .disabled(!isFormValid)
