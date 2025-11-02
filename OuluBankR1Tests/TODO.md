@@ -23,4 +23,4 @@
 ## UITests 
 
 - [x] User can calculate APR successfully for valid SSN. 
-- [ ] Displays error message when credit score was invalid or not found. 
+- [x] Displays error message when credit score was invalid or not found. 
