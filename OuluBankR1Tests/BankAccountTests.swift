@@ -80,4 +80,14 @@ struct BankAccountTests {
         bankAccount.withdraw(amount: 600, withdrawType: .check)
         #expect(bankAccount.balance == 490)
     }
+    
+    // Deposited amount is added to the transaction history
+    @Test
+    func depositing_amount_is_added_to_transaction_history() {
+        let bankAccount = BankAccount(accountNumber: "123456", balance: 500)
+        try? bankAccount.deposit(amount: 10, depositType: .check)
+        #expect(bankAccount.transactions.count == 1, "Transactions was not increment after deposit")
+        #expect(bankAccount.transactions[0].amount == 10, "Transaction amount is not matching")
+        #expect(bankAccount.transactions[0].transactionType == TransactionType.deposit, "Transaction type is not matching")
+    }
 }
