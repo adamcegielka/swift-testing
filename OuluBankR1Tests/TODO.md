@@ -8,6 +8,7 @@
 - [X] Depositing negative amount is not allowed. 
 - [x] Withdrawing with insufficient balance results in penalty. 
 - [ ] Deposited amount is added to the transaction history. 
+- [ ] Withdrawing the amount is added to the transaction history. 
 
 ## APRService Tests 
 
