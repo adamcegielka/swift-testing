@@ -28,7 +28,6 @@
 		8DDA7ECA2D5E7A3E00C57DD6 /* OuluBankR1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OuluBankR1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DDA7EDF2D5E7A6400C57DD6 /* OuluBankR1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OuluBankR1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C25876C72EB621A2003ACC1F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		C25876DB2EB637D6003ACC1F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -112,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				C25876DD2EB6449A003ACC1F /* Helpful */,
-				C25876DB2EB637D6003ACC1F /* .gitignore */,
 				C25876D62EB635C4003ACC1F /* .github */,
 				8DDA7ECC2D5E7A3E00C57DD6 /* OuluBankR1 */,
 				8DDA7EE02D5E7A6400C57DD6 /* OuluBankR1Tests */,
