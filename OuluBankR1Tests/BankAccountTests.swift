@@ -65,4 +65,19 @@ struct BankAccountTests {
             try bankAccount.deposit(amount: -10, depositType: .cash)
         })
     }
+    
+    // Withdrawing with insufficient balance results in penalty
+    @Test
+    func withdrawing_with_insufficient_balance() {
+        let bankAccount = BankAccount(accountNumber: "123456", balance: 500)
+        bankAccount.withdraw(amount: 200, withdrawType: .check)
+        #expect(bankAccount.balance == 300)
+    }
+    
+    @Test
+    func withdrawing_with_insufficient_balance_results_in_penalty() {
+        let bankAccount = BankAccount(accountNumber: "123456", balance: 500)
+        bankAccount.withdraw(amount: 600, withdrawType: .check)
+        #expect(bankAccount.balance == 490)
+    }
 }
