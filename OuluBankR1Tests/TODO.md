@@ -18,9 +18,9 @@
 ## Mocking
 
 - [x] APR service should call get credit score on credit score service
-- [ ] APR service does not call get credit score for invalid ssn   
+- [x] APR service does not call get credit score for invalid ssn   
 
 ## UITests 
 
-- [ ] User can calculate APR successfully for valid SSN. 
+- [x] User can calculate APR successfully for valid SSN. 
 - [ ] Displays error message when credit score was invalid or not found. 
