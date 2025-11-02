@@ -5,7 +5,7 @@
 
 - [x] When deposit using check or cash then bank balance increases.  
 - [x] When deposit using transfer then charge fee to amount deposited.  
-- [ ] Depositing negative amount is not allowed. 
+- [X] Depositing negative amount is not allowed. 
 - [ ] Withdrawing with insufficient balance results in penalty. 
 - [ ] Deposited amount is added to the transaction history. 
 
