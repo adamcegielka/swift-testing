@@ -26,7 +26,7 @@ enum CreditScoreServiceError: LocalizedError {
 struct APRService {
     
     // third part service
-    let creditScoreService: CreditScoreService
+    let creditScoreService: CreditScoreServiceProtocol
     
     func getAPR(ssn: String) async throws -> Double {
         guard let creditScore = try await creditScoreService.getCreditScore(ssn: ssn) else {

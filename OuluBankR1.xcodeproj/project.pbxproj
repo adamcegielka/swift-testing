@@ -42,9 +42,17 @@
 		C25876E52EB75487003ACC1F /* Exceptions for "OuluBankR1Tests" folder in "OuluBankR1Tests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Mocks/MockCreditScoreService.swift,
 				TODO.md,
 			);
 			target = 8DDA7EDE2D5E7A6400C57DD6 /* OuluBankR1Tests */;
+		};
+		C25876E82EB78DD0003ACC1F /* Exceptions for "OuluBankR1Tests" folder in "OuluBankR1" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Mocks/MockCreditScoreService.swift,
+			);
+			target = 8DDA7EC92D5E7A3E00C57DD6 /* OuluBankR1 */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -62,6 +70,7 @@
 		8DDA7EE02D5E7A6400C57DD6 /* OuluBankR1Tests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
+				C25876E82EB78DD0003ACC1F /* Exceptions for "OuluBankR1Tests" folder in "OuluBankR1" target */,
 				C25876E52EB75487003ACC1F /* Exceptions for "OuluBankR1Tests" folder in "OuluBankR1Tests" target */,
 			);
 			path = OuluBankR1Tests;

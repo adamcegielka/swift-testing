@@ -3,6 +3,7 @@
 //  OuluBankR1
 //
 //  Created by Mohammad Azam on 2/15/25.
+//  Updated by Adam on 11/2/2025
 //
 
 import Foundation
@@ -24,3 +25,8 @@ struct CreditScoreService {
 }
 // END OF CANNOT CHANGE THIS CODE
 
+protocol CreditScoreServiceProtocol {
+    func getCreditScore(ssn: String) async throws -> CreditScore?
+}
+
+extension CreditScoreService: CreditScoreServiceProtocol {}
