@@ -29,4 +29,4 @@ protocol CreditScoreServiceProtocol {
     func getCreditScore(ssn: String) async throws -> CreditScore?
 }
 
-extension CreditScoreService: CreditScoreServiceProtocol {}
+extension CreditScoreService: CreditScoreServiceProtocol { }

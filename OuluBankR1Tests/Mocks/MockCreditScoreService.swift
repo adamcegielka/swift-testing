@@ -14,6 +14,8 @@ struct MockCreditScoreService: CreditScoreServiceProtocol {
     
     func getCreditScore(ssn: String) async throws -> CreditScore? {
         
+        print("GET CREDIT SCORE")
+        
         if let onGetCreditScore {
             return onGetCreditScore(ssn)
         } else {
