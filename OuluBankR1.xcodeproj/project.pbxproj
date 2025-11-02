@@ -6,10 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		C25876C92EB621AF003ACC1F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C25876C72EB621A2003ACC1F /* README.md */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		8D5051AE2D6168AC00CB3AA4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -39,21 +35,19 @@
 		C25876E12EB644F8003ACC1F /* Exceptions for "Helpful" folder in "OuluBankR1Tests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				conventional_commits.md,
 				shortcuts.md,
 			);
 			target = 8DDA7EDE2D5E7A6400C57DD6 /* OuluBankR1Tests */;
 		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		C25876E22EB644F8003ACC1F /* Exceptions for "Helpful" folder in "Compile Sources" phase from "OuluBankR1Tests" target */ = {
-			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
-			buildPhase = 8DDA7EDB2D5E7A6400C57DD6 /* Sources */;
+		C25876E52EB75487003ACC1F /* Exceptions for "OuluBankR1Tests" folder in "OuluBankR1Tests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				shortcuts.md,
+				TODO.md,
 			);
+			target = 8DDA7EDE2D5E7A6400C57DD6 /* OuluBankR1Tests */;
 		};
-/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8D5051A92D6168AC00CB3AA4 /* OuluBankR1UITests */ = {
@@ -68,6 +62,9 @@
 		};
 		8DDA7EE02D5E7A6400C57DD6 /* OuluBankR1Tests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C25876E52EB75487003ACC1F /* Exceptions for "OuluBankR1Tests" folder in "OuluBankR1Tests" target */,
+			);
 			path = OuluBankR1Tests;
 			sourceTree = "<group>";
 		};
@@ -80,7 +77,6 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				C25876E12EB644F8003ACC1F /* Exceptions for "Helpful" folder in "OuluBankR1Tests" target */,
-				C25876E22EB644F8003ACC1F /* Exceptions for "Helpful" folder in "Compile Sources" phase from "OuluBankR1Tests" target */,
 			);
 			path = Helpful;
 			sourceTree = "<group>";
@@ -272,7 +268,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C25876C92EB621AF003ACC1F /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

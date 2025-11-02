@@ -45,12 +45,10 @@ struct BankAccountTests {
     @Test
     func deposit_using_transfer_type_charges_fee() {
         let bankAccount = BankAccount(accountNumber: "123456", balance: 500)
-        let feePercentage = 0.02 // 2%
+//        let feePercentage = 0.02 // 2%
         let depositAmount = 200.0
         let expectedBalance = 696.0
         bankAccount.deposit(amount: depositAmount, depositType: .transfer)
         #expect(bankAccount.balance == expectedBalance)
     }
 }
-
-// ci testing
